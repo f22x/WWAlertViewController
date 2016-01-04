@@ -41,10 +41,16 @@ class WWTextField: UITextField {
     
     override func drawPlaceholderInRect(rect: CGRect) {
         UIColor.grayColor().setFill()
+        let topStringFont = UIFont().fontWithSize(15)
+        let attributesDictionary = [NSFontAttributeName: topStringFont] as NSDictionary
+        placeholder?.drawInRect(rect, withAttributes:attributesDictionary as? [String : AnyObject])
     }
     
     override func placeholderRectForBounds(bounds: CGRect) -> CGRect {
-        let placeHolderF = CGRectMake(10, 1, bounds.size.width, bounds.size.height)
+        let attributesDictionary = [NSFontAttributeName: UIFont().fontWithSize(15)]
+        let placeHolderSize: CGSize = placeholder!.sizeWithAttributes(attributesDictionary)
+        let placeHolderF: CGRect = CGRectMake(10, 1, placeHolderSize.width, placeHolderSize.height)
+        
         return placeHolderF
     }
     

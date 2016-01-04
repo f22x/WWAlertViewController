@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B5406E21C3A8B4800057228 /* WWRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5406E11C3A8B4800057228 /* WWRect.swift */; };
 		9B67D6151C1FF5DF00E68DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B67D6141C1FF5DF00E68DC0 /* AppDelegate.swift */; };
 		9B67D6171C1FF5DF00E68DC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B67D6161C1FF5DF00E68DC0 /* ViewController.swift */; };
 		9B67D61A1C1FF5DF00E68DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B67D6181C1FF5DF00E68DC0 /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B5406E11C3A8B4800057228 /* WWRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWRect.swift; sourceTree = "<group>"; };
 		9B67D6111C1FF5DF00E68DC0 /* WWAlerViewController_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWAlerViewController_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B67D6141C1FF5DF00E68DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B67D6161C1FF5DF00E68DC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				9B892BE41C216FA300DEF962 /* WW_UIButton.swift */,
 				9B67D66C1C2026F500E68DC0 /* WWTimer.swift */,
 				9B67D6701C20293C00E68DC0 /* WWView.swift */,
+				9B5406E11C3A8B4800057228 /* WWRect.swift */,
 				9B67D6181C1FF5DF00E68DC0 /* Main.storyboard */,
 				9B67D61E1C1FF5DF00E68DC0 /* Assets.xcassets */,
 				9B67D6201C1FF5DF00E68DC0 /* LaunchScreen.storyboard */,
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B892BE51C216FA300DEF962 /* WW_UIButton.swift in Sources */,
+				9B5406E21C3A8B4800057228 /* WWRect.swift in Sources */,
 				9B67D6651C201AC200E68DC0 /* WWLabel.swift in Sources */,
 				9B67D6711C20293C00E68DC0 /* WWView.swift in Sources */,
 				9B67D64A1C1FFA4D00E68DC0 /* WWTextField.swift in Sources */,

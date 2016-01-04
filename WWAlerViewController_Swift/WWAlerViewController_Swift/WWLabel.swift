@@ -9,6 +9,8 @@
 import UIKit
 import Foundation
 
+let IPHONE_6: Bool = UIScreen.instancesRespondToSelector("currentMode") ? CGSizeEqualToSize(CGSizeMake(750, 1334), (UIScreen.mainScreen().currentMode?.size)!) : false
+
 class WWLabel: UILabel {
     
     var topTitle : NSString?
@@ -17,7 +19,7 @@ class WWLabel: UILabel {
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
-
+    
     override func drawRect(rect: CGRect) {
         let topString = "为了您的账户安全，我们将发送验证码到您的手机"
         let topStringFont = UIFont(name: "BodoniOrnamentsITCTT", size: 14)
@@ -25,26 +27,36 @@ class WWLabel: UILabel {
         let topStringStyle = NSParagraphStyle.defaultParagraphStyle().mutableCopy() as? NSMutableParagraphStyle
         topStringStyle?.alignment =  NSTextAlignment.Center
         
-//        if let topStringFont = font {
-//        let topStringAttributes = NSMutableDictionary()
-//        topStringAttributes[NSParagraphStyleAttributeName] = topStringStyle
-//        topStringAttributes[NSForegroundColorAttributeName] = topStringColor
-//        topStringAttributes[NSFontAttributeName] = topStringFont as UIFont
-//        
-//        let topRect:CGRect = topString.boundingRectWithSize(frame.size, options: NSStringDrawingOptions.UsesFontLeading, attributes: nil, context: nil);
-//        topString.drawInRect(frame, withAttributes:topStringAttributes)
-//        }
+        let topStringAttributes = [
+            NSFontAttributeName: topStringFont!,
+            NSForegroundColorAttributeName: topStringColor,
+            NSParagraphStyleAttributeName: topStringStyle!
+            ] as NSDictionary
         
-        if let topStringFont = font {
-            let topStringAttributes = [
-                NSFontAttributeName: topStringFont?,
-                NSForegroundColorAttributeName: topStringColor,
-                NSParagraphStyleAttributeName: topStringStyle
-            ]
+        let topRect: CGRect = topString.boundingRectWithSize(frame.size, options: NSStringDrawingOptions.UsesFontLeading, attributes: topStringAttributes as? [String : AnyObject], context: nil);
+        topString.drawInRect(CGRectMake((frame.size.width - topRect.size.width)/2, 10, topRect.size.width, 250), withAttributes:topStringAttributes as? [String : AnyObject])
+        
+        guard let myMiddleTitle = middleTitle as? String
+            else {
+                return
         }
-
+        
+        let middleString = (myMiddleTitle as NSString).stringByReplacingCharactersInRange(NSMakeRange(3, 4), withString: "****")
+        let middleStringAttributes = [
+            NSForegroundColorAttributeName: UIColor.blackColor(),
+            NSFontAttributeName: UIFont().fontWithSize(23)
+            ] as NSDictionary
+        let middleStringRect: CGRect = middleString.boundingRectWithSize(frame.size, options: NSStringDrawingOptions.UsesFontLeading, attributes: middleStringAttributes as? [String : AnyObject], context: nil);
+        
+        if (IPHONE_6) {
+            middleString.drawInRect(CGRectMake((frame.size.width - middleStringRect.size.width)/2, topRect.size.height + 15, frame.size.width, 100) , withAttributes:topStringAttributes as? [String : AnyObject])
+        }
+        else {
+            middleString.drawInRect(CGRectMake((frame.size.width - middleStringRect.size.width)/2, topRect.size.height + 5, frame.size.width, 100) , withAttributes:topStringAttributes as? [String : AnyObject])
+        }
+        
     }
-
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

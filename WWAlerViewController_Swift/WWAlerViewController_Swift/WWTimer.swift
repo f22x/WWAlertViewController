@@ -31,7 +31,7 @@ public class WWTimer: NSObject {
     
     func timeOut(timeBlock: ((NSString) -> ())?) {
         if let block = timeBlock {
-            let string = "\(timeInterval--)秒后重发"
+            let string = "\(--timeInterval)秒后重发"
             block(string)
         }
     }
