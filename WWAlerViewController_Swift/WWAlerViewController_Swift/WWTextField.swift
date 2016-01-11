@@ -8,7 +8,8 @@
 
 import UIKit
 
-let  lineHeight : CGFloat =  3.0
+let lineHeight: CGFloat =  3.0
+let lineOrigin: CGFloat = 0.65
 
 class WWTextField: UITextField {
     
@@ -30,8 +31,8 @@ class WWTextField: UITextField {
         UIGraphicsBeginImageContextWithOptions(frame.size, false, 0)
         UIColor.blackColor().setFill()
         let bezier = UIBezierPath()
-        bezier.moveToPoint(CGPointMake(frame.size.width * 0.65, lineHeight + 2))
-        bezier.addLineToPoint(CGPointMake(frame.size.width * 0.65, lineHeight + (self.frame.size.height - lineHeight*lineHeight)))
+        bezier.moveToPoint(CGPointMake(frame.size.width * lineOrigin, lineHeight + 2))
+        bezier.addLineToPoint(CGPointMake(frame.size.width * lineOrigin, lineHeight + (frame.height - lineHeight*lineHeight)))
         bezier.lineWidth = 0.3
         bezier.stroke()
         let image = UIGraphicsGetImageFromCurrentImageContext()

@@ -16,7 +16,6 @@ class ViewController: UIViewController {
         let alertViewController = UIAlertController(title: "123", message: "456", preferredStyle: UIAlertControllerStyle.Alert)
         alertViewController.addTextFieldWithConfigurationHandler { (UITextField) -> Void in
         }
-        
     }
 
     override func didReceiveMemoryWarning() {

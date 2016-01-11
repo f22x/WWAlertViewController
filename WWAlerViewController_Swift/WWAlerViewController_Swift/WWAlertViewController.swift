@@ -26,7 +26,6 @@ class WWAlertViewController: UIViewController {
 
     func setUp() {
 //        let backGroundViewRect: CGRect = 
-        
     }
     
     required init?(coder aDecoder: NSCoder) {

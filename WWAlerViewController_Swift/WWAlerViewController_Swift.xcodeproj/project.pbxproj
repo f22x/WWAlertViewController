@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9B3F7F271C3B93B5005AD58C /* MyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3F7F261C3B93B5005AD58C /* MyLog.swift */; };
-		9B5406E21C3A8B4800057228 /* WWRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5406E11C3A8B4800057228 /* WWRect.swift */; };
 		9B67D6151C1FF5DF00E68DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B67D6141C1FF5DF00E68DC0 /* AppDelegate.swift */; };
 		9B67D6171C1FF5DF00E68DC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B67D6161C1FF5DF00E68DC0 /* ViewController.swift */; };
 		9B67D61A1C1FF5DF00E68DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B67D6181C1FF5DF00E68DC0 /* Main.storyboard */; };
@@ -33,6 +32,9 @@
 		9B67D6721C20293C00E68DC0 /* WWView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B67D6701C20293C00E68DC0 /* WWView.swift */; };
 		9B67D6731C20293C00E68DC0 /* WWView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B67D6701C20293C00E68DC0 /* WWView.swift */; };
 		9B892BE51C216FA300DEF962 /* WW_UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B892BE41C216FA300DEF962 /* WW_UIButton.swift */; };
+		9BC2787A1C43B7610038F093 /* WWRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC278791C43B7610038F093 /* WWRect.swift */; };
+		9BC2787D1C43BB500038F093 /* WWRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC278791C43B7610038F093 /* WWRect.swift */; };
+		9BC2787E1C43BB550038F093 /* WWRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC278791C43B7610038F093 /* WWRect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +56,6 @@
 
 /* Begin PBXFileReference section */
 		9B3F7F261C3B93B5005AD58C /* MyLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLog.swift; sourceTree = "<group>"; };
-		9B5406E11C3A8B4800057228 /* WWRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWRect.swift; sourceTree = "<group>"; };
 		9B67D6111C1FF5DF00E68DC0 /* WWAlerViewController_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWAlerViewController_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B67D6141C1FF5DF00E68DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B67D6161C1FF5DF00E68DC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +76,7 @@
 		9B67D66C1C2026F500E68DC0 /* WWTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWTimer.swift; sourceTree = "<group>"; };
 		9B67D6701C20293C00E68DC0 /* WWView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWView.swift; sourceTree = "<group>"; };
 		9B892BE41C216FA300DEF962 /* WW_UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WW_UIButton.swift; sourceTree = "<group>"; };
+		9BC278791C43B7610038F093 /* WWRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWRect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +135,7 @@
 				9B892BE41C216FA300DEF962 /* WW_UIButton.swift */,
 				9B67D66C1C2026F500E68DC0 /* WWTimer.swift */,
 				9B67D6701C20293C00E68DC0 /* WWView.swift */,
-				9B5406E11C3A8B4800057228 /* WWRect.swift */,
+				9BC278791C43B7610038F093 /* WWRect.swift */,
 				9B3F7F261C3B93B5005AD58C /* MyLog.swift */,
 				9B67D6181C1FF5DF00E68DC0 /* Main.storyboard */,
 				9B67D61E1C1FF5DF00E68DC0 /* Assets.xcassets */,
@@ -294,8 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B892BE51C216FA300DEF962 /* WW_UIButton.swift in Sources */,
+				9BC2787A1C43B7610038F093 /* WWRect.swift in Sources */,
 				9B3F7F271C3B93B5005AD58C /* MyLog.swift in Sources */,
-				9B5406E21C3A8B4800057228 /* WWRect.swift in Sources */,
 				9B67D6651C201AC200E68DC0 /* WWLabel.swift in Sources */,
 				9B67D6711C20293C00E68DC0 /* WWView.swift in Sources */,
 				9B67D64A1C1FFA4D00E68DC0 /* WWTextField.swift in Sources */,
@@ -311,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC2787E1C43BB550038F093 /* WWRect.swift in Sources */,
 				9B67D64B1C1FFA4D00E68DC0 /* WWTextField.swift in Sources */,
 				9B67D62D1C1FF5DF00E68DC0 /* WWAlerViewController_SwiftTests.swift in Sources */,
 				9B67D6661C201AC200E68DC0 /* WWLabel.swift in Sources */,
@@ -324,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC2787D1C43BB500038F093 /* WWRect.swift in Sources */,
 				9B67D64C1C1FFA4D00E68DC0 /* WWTextField.swift in Sources */,
 				9B67D6381C1FF5DF00E68DC0 /* WWAlerViewController_SwiftUITests.swift in Sources */,
 				9B67D6671C201AC200E68DC0 /* WWLabel.swift in Sources */,
