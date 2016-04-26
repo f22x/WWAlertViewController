@@ -9,8 +9,8 @@
 import UIKit
 
 class WWAlertViewController: UIViewController {
-    var customTextField: WWTextField?
-    var customTextLabel: WWLabel?
+//    var customTextField: WWTextField?
+//    var customTextLabel: WWLabel?
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -18,14 +18,13 @@ class WWAlertViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        modalPresentationStyle = UIModalPresentationStyle.Custom
-        view.backgroundColor = UIColor(colorLiteralRed: 0, green: 0, blue: 0, alpha: 0.7)
-        // Do any additional setup after loading the view.
         setUp()
     }
 
     func setUp() {
-//        let backGroundViewRect: CGRect = 
+       let customTextField = WWTextField()
+        customTextField.frame = CGRectMake(0, 0, 100, 20)
+        view.addSubview(customTextField)
     }
     
     required init?(coder aDecoder: NSCoder) {

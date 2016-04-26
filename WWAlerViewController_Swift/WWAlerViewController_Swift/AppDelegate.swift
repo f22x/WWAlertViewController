@@ -17,6 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        Xtrace.describeValues(true)
+        Xtrace.showCaller(true)
+        Xtrace.showActual(true)
+        Xtrace.showArguments(true)
+        Xtrace.showReturns(true)
+//        Xtrace.useColor("\033[fg200,0,200;")
+        WWTextField.xtrace()
+        
         return true
     }
 

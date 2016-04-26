@@ -13,7 +13,7 @@ let lineOrigin: CGFloat = 0.65
 
 class WWTextField: UITextField {
     
-    var layerColor = UIColor()
+    var layerColor: UIColor?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,7 +21,7 @@ class WWTextField: UITextField {
         font = UIFont.systemFontOfSize(12)
         placeholder = "请输入验证码"
         layer.cornerRadius = 4
-        layer.borderColor = layerColor.CGColor
+        layer.borderColor = layerColor?.CGColor
         layer.borderWidth = 1.0
         backgroundColor = UIColor.blackColor()
         keyboardType = UIKeyboardType.NumbersAndPunctuation
@@ -42,13 +42,13 @@ class WWTextField: UITextField {
     
     override func drawPlaceholderInRect(rect: CGRect) {
         UIColor.grayColor().setFill()
-        let topStringFont = UIFont().fontWithSize(15)
-        let attributesDictionary = [NSFontAttributeName: topStringFont] as NSDictionary
-        placeholder?.drawInRect(rect, withAttributes:attributesDictionary as? [String : AnyObject])
+        // 导致崩溃 ？？？
+//        let attributesDictionary = [NSFontAttributeName: UIFont().fontWithSize(15)] as NSDictionary
+        placeholder?.drawInRect(rect, withAttributes: nil)
     }
     
     override func placeholderRectForBounds(bounds: CGRect) -> CGRect {
-        let attributesDictionary = [NSFontAttributeName: UIFont().fontWithSize(15)]
+        let attributesDictionary = [NSFontAttributeName: UIFont().fontWithSize(15)] as Dictionary?
         let placeHolderSize: CGSize = placeholder!.sizeWithAttributes(attributesDictionary)
         let placeHolderF: CGRect = CGRectMake(10, 1, placeHolderSize.width, placeHolderSize.height)
         

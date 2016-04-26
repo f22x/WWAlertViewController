@@ -35,6 +35,11 @@
 		9BC2787A1C43B7610038F093 /* WWRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC278791C43B7610038F093 /* WWRect.swift */; };
 		9BC2787D1C43BB500038F093 /* WWRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC278791C43B7610038F093 /* WWRect.swift */; };
 		9BC2787E1C43BB550038F093 /* WWRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC278791C43B7610038F093 /* WWRect.swift */; };
+		AB5A2AA21CBE1B3C00D7139E /* WWTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5A2AA11CBE1B3C00D7139E /* WWTableViewController.swift */; };
+		AB5A2AA41CBE1C9F00D7139E /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5A2AA31CBE1C9F00D7139E /* Reusable.swift */; };
+		AB5A2AA61CBE1FC900D7139E /* WWTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5A2AA51CBE1FC900D7139E /* WWTableViewCell.swift */; };
+		AB5A2AA81CBE205100D7139E /* WWTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5A2AA71CBE205100D7139E /* WWTableView.swift */; };
+		AB5A42AF1CBF2D0C0083F4A6 /* Xtrace.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB5A42AE1CBF2D0C0083F4A6 /* Xtrace.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +82,13 @@
 		9B67D6701C20293C00E68DC0 /* WWView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWView.swift; sourceTree = "<group>"; };
 		9B892BE41C216FA300DEF962 /* WW_UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WW_UIButton.swift; sourceTree = "<group>"; };
 		9BC278791C43B7610038F093 /* WWRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWRect.swift; sourceTree = "<group>"; };
+		AB5A2AA11CBE1B3C00D7139E /* WWTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWTableViewController.swift; sourceTree = "<group>"; };
+		AB5A2AA31CBE1C9F00D7139E /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		AB5A2AA51CBE1FC900D7139E /* WWTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWTableViewCell.swift; sourceTree = "<group>"; };
+		AB5A2AA71CBE205100D7139E /* WWTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWTableView.swift; sourceTree = "<group>"; };
+		AB5A42AC1CBF2D0B0083F4A6 /* WWAlerViewController_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WWAlerViewController_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		AB5A42AD1CBF2D0C0083F4A6 /* Xtrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xtrace.h; sourceTree = "<group>"; };
+		AB5A42AE1CBF2D0C0083F4A6 /* Xtrace.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Xtrace.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +139,8 @@
 		9B67D6131C1FF5DF00E68DC0 /* WWAlerViewController_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				AB5A42AD1CBF2D0C0083F4A6 /* Xtrace.h */,
+				AB5A42AE1CBF2D0C0083F4A6 /* Xtrace.mm */,
 				9B67D6141C1FF5DF00E68DC0 /* AppDelegate.swift */,
 				9B67D6161C1FF5DF00E68DC0 /* ViewController.swift */,
 				9B67D6451C1FF6A000E68DC0 /* WWAlertViewController.swift */,
@@ -137,11 +151,16 @@
 				9B67D6701C20293C00E68DC0 /* WWView.swift */,
 				9BC278791C43B7610038F093 /* WWRect.swift */,
 				9B3F7F261C3B93B5005AD58C /* MyLog.swift */,
+				AB5A2AA11CBE1B3C00D7139E /* WWTableViewController.swift */,
+				AB5A2AA51CBE1FC900D7139E /* WWTableViewCell.swift */,
+				AB5A2AA71CBE205100D7139E /* WWTableView.swift */,
+				AB5A2AA31CBE1C9F00D7139E /* Reusable.swift */,
 				9B67D6181C1FF5DF00E68DC0 /* Main.storyboard */,
 				9B67D61E1C1FF5DF00E68DC0 /* Assets.xcassets */,
 				9B67D6201C1FF5DF00E68DC0 /* LaunchScreen.storyboard */,
 				9B67D6231C1FF5DF00E68DC0 /* Info.plist */,
 				9B67D61B1C1FF5DF00E68DC0 /* WWAlerViewController_Swift.xcdatamodeld */,
+				AB5A42AC1CBF2D0B0083F4A6 /* WWAlerViewController_Swift-Bridging-Header.h */,
 			);
 			path = WWAlerViewController_Swift;
 			sourceTree = "<group>";
@@ -301,7 +320,12 @@
 				9B67D6651C201AC200E68DC0 /* WWLabel.swift in Sources */,
 				9B67D6711C20293C00E68DC0 /* WWView.swift in Sources */,
 				9B67D64A1C1FFA4D00E68DC0 /* WWTextField.swift in Sources */,
+				AB5A2AA81CBE205100D7139E /* WWTableView.swift in Sources */,
+				AB5A2AA41CBE1C9F00D7139E /* Reusable.swift in Sources */,
+				AB5A42AF1CBF2D0C0083F4A6 /* Xtrace.mm in Sources */,
 				9B67D6171C1FF5DF00E68DC0 /* ViewController.swift in Sources */,
+				AB5A2AA21CBE1B3C00D7139E /* WWTableViewController.swift in Sources */,
+				AB5A2AA61CBE1FC900D7139E /* WWTableViewCell.swift in Sources */,
 				9B67D61D1C1FF5DF00E68DC0 /* WWAlerViewController_Swift.xcdatamodeld in Sources */,
 				9B67D6151C1FF5DF00E68DC0 /* AppDelegate.swift in Sources */,
 				9B67D6461C1FF6A000E68DC0 /* WWAlertViewController.swift in Sources */,
@@ -459,11 +483,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WWAlerViewController_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "XingLei.WWAlerViewController-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WWAlerViewController_Swift/WWAlerViewController_Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -472,11 +498,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WWAlerViewController_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "XingLei.WWAlerViewController-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WWAlerViewController_Swift/WWAlerViewController_Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;

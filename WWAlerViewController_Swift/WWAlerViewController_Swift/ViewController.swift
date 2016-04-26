@@ -13,9 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let alertViewController = UIAlertController(title: "123", message: "456", preferredStyle: UIAlertControllerStyle.Alert)
-        alertViewController.addTextFieldWithConfigurationHandler { (UITextField) -> Void in
-        }
+        let wwAlertView = WWAlertViewController()
+        self.presentViewController(wwAlertView, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
