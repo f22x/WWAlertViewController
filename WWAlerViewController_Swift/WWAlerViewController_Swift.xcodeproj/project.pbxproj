@@ -31,7 +31,7 @@
 		9B67D6711C20293C00E68DC0 /* WWView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B67D6701C20293C00E68DC0 /* WWView.swift */; };
 		9B67D6721C20293C00E68DC0 /* WWView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B67D6701C20293C00E68DC0 /* WWView.swift */; };
 		9B67D6731C20293C00E68DC0 /* WWView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B67D6701C20293C00E68DC0 /* WWView.swift */; };
-		9B892BE51C216FA300DEF962 /* WW_UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B892BE41C216FA300DEF962 /* WW_UIButton.swift */; };
+		9B892BE51C216FA300DEF962 /* WWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B892BE41C216FA300DEF962 /* WWButton.swift */; };
 		9BC2787A1C43B7610038F093 /* WWRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC278791C43B7610038F093 /* WWRect.swift */; };
 		9BC2787D1C43BB500038F093 /* WWRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC278791C43B7610038F093 /* WWRect.swift */; };
 		9BC2787E1C43BB550038F093 /* WWRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC278791C43B7610038F093 /* WWRect.swift */; };
@@ -80,7 +80,7 @@
 		9B67D6641C201AC200E68DC0 /* WWLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWLabel.swift; sourceTree = "<group>"; };
 		9B67D66C1C2026F500E68DC0 /* WWTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWTimer.swift; sourceTree = "<group>"; };
 		9B67D6701C20293C00E68DC0 /* WWView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWView.swift; sourceTree = "<group>"; };
-		9B892BE41C216FA300DEF962 /* WW_UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WW_UIButton.swift; sourceTree = "<group>"; };
+		9B892BE41C216FA300DEF962 /* WWButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWButton.swift; sourceTree = "<group>"; };
 		9BC278791C43B7610038F093 /* WWRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWRect.swift; sourceTree = "<group>"; };
 		AB5A2AA11CBE1B3C00D7139E /* WWTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWTableViewController.swift; sourceTree = "<group>"; };
 		AB5A2AA31CBE1C9F00D7139E /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 				9B67D6451C1FF6A000E68DC0 /* WWAlertViewController.swift */,
 				9B67D6491C1FFA4D00E68DC0 /* WWTextField.swift */,
 				9B67D6641C201AC200E68DC0 /* WWLabel.swift */,
-				9B892BE41C216FA300DEF962 /* WW_UIButton.swift */,
+				9B892BE41C216FA300DEF962 /* WWButton.swift */,
 				9B67D66C1C2026F500E68DC0 /* WWTimer.swift */,
 				9B67D6701C20293C00E68DC0 /* WWView.swift */,
 				9BC278791C43B7610038F093 /* WWRect.swift */,
@@ -314,7 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B892BE51C216FA300DEF962 /* WW_UIButton.swift in Sources */,
+				9B892BE51C216FA300DEF962 /* WWButton.swift in Sources */,
 				9BC2787A1C43B7610038F093 /* WWRect.swift in Sources */,
 				9B3F7F271C3B93B5005AD58C /* MyLog.swift in Sources */,
 				9B67D6651C201AC200E68DC0 /* WWLabel.swift in Sources */,

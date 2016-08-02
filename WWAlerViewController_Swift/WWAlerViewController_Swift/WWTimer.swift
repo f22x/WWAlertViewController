@@ -23,7 +23,7 @@ public class WWTimer: NSObject {
         var timer = NSTimer()
         timeInterval = 60
         if (stop == false) {
-            timer = NSTimer(timeInterval: timeInterval, target: self, selector: "timeOut", userInfo: nil, repeats: true)
+            timer = NSTimer(timeInterval: timeInterval, target: self, selector: #selector(timeOut), userInfo: nil, repeats: true)
             NSRunLoop.currentRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
         }
         else {

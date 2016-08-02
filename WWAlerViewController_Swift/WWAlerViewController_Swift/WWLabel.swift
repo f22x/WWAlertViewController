@@ -16,7 +16,7 @@ let labelTop1:CGFloat = 45.0
 let labelHeight:CGFloat = 250.0
 
 
-let IPHONE_6: Bool = UIScreen.instancesRespondToSelector("currentMode") ? CGSizeEqualToSize(CGSizeMake(750, 1334), (UIScreen.mainScreen().currentMode?.size)!) : false
+let IPHONE_6: Bool = UIScreen.instancesRespondToSelector(Selector("currentMode")) ? CGSizeEqualToSize(CGSizeMake(750, 1334), (UIScreen.mainScreen().currentMode?.size)!) : false
 
 class WWLabel: UILabel {
     

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WW_UIButton: UIButton {
+class WWButton: UIButton {
 
     var wwTimer =  WWTimer()
     var task: Task?
@@ -19,7 +19,7 @@ class WW_UIButton: UIButton {
         titleLabel?.font = UIFont.systemFontOfSize(12)
         setTitle("获取验证码", forState: UIControlState.Normal)
         titleLabel?.textAlignment = NSTextAlignment.Center
-        addTarget(self, action: "getSecurityCode", forControlEvents: UIControlEvents.TouchUpInside)
+        addTarget(self, action: #selector(WWButton.getSecurityCode), forControlEvents: UIControlEvents.TouchUpInside)
     }
     
     func getSecurityCode() {
